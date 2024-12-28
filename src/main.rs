@@ -19,7 +19,7 @@ fn main() {
     let genesis_block = Block::new(0, "Genesis Block".to_string(), "0".to_string());
     blockchain.push(genesis_block);
 
-    // Proof-of-Work Example
+    // Proof-of-Work
     let mut new_block = Block::new(
         1,
         "Transaction Data 1".to_string(),
@@ -29,7 +29,7 @@ fn main() {
     println!("Mined Block: {:?}", mined_block);
     blockchain.push(mined_block);
 
-    // Proof-of-Stake Example
+    // Proof-of-Stake
     let stakeholders = vec![
         ("Alice".to_string(), 50),
         ("Bob".to_string(), 30),
